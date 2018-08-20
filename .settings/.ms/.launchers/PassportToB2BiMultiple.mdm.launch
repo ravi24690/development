@@ -12,7 +12,7 @@
 <mapEntry key="0#ACCEPT_INPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 <mapEntry key="1#ACCEPT_OUTPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 </mapAttribute>
-<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\Users\akesharwani\Downloads\pp_pm_export.xml"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\Users\akesharwani\Downloads\input.xml"/>
 <mapAttribute key="com.axway.ms.dml.simulation.ui.bdocOutputFilePath">
 <mapEntry key="out" value="/Schenker_WorkInProgress/Testdata/out"/>
 </mapAttribute>

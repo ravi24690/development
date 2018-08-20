@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="9cd7900c-54cb-4006-84f4-3da1056571f7">
-   <signature appVersion="3.1.2" lastUpdatedOn="20/08/2018 17:50:14 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="20/08/2018 19:17:17 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/InterchangePartnerProfileMultiple.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/PassPortConfCertMultiple.bdoc" alias="in2"/>
@@ -144,6 +144,9 @@
       </mapElement>
       <mapElement elementHash="1273467747" elementPath="/InterchangePartnerProfile/xsi/">
          <dmlExpression><![CDATA["http://www.w3.org/2001/XMLSchema-instance"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="658501982" elementPath="/InterchangePartnerProfile/OrganizationProfile/CommunitySubscription/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1950887008" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/responseTimeoutSecs/">
          <dmlExpression><![CDATA["300"]]></dmlExpression>
