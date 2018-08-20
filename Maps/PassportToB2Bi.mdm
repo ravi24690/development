@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="f15df8dd-7827-4a36-8f8c-f1a4d71d6a73">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/08/2018 18:19:16 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/InterchangePartnerProfile.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PassPortConfCert.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="2128409349" elementPath="/InterchangePartnerProfile/OrganizationProfile/CommunitySubscription/AuthorizedParty/">
+         <dmlExpression><![CDATA["Axway_Windows"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="30399912" elementPath="/InterchangePartnerProfile/schemaLocation/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/ipp http://www.axway.com/Schemas/2009/10/InterchangePartnerConfig.xsd"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-481383834" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/usage/">
+         <dmlExpression><![CDATA["encrypting,sslClientAuth,signing"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1126283" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="195670645" elementPath="/InterchangePartnerProfile/attribute/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2012/attribute"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1486432346" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/root/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="107675574" elementPath="/InterchangePartnerProfile/xmlns/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/ipp"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-466296921" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/useCustomRetryIntervals/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1138349047" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isConsumer/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1062669037" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/preferredEncryptionCertId/">
+         <dmlExpression><![CDATA["C1533710729979.48071@item-s32255_cn"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-832427121" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/default/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1425455890" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/SequenceTimeout/">
+         <dmlExpression><![CDATA["60.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1422654447" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/preferredTransportRef/">
+         <dmlExpression><![CDATA["HTTPTransport_1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1340397228" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/root/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1095606629" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/enabled/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-453336647" elementPath="/InterchangePartnerProfile/OrganizationProfile/RoutingIds/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1083399128" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/certId/">
+         <dmlExpression><![CDATA["C1531465836711.6064@item-s32255_cn"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="838133299" elementPath="/InterchangePartnerProfile/cop/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/cop"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="218193736" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isIntegration/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1059880983" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/friendlyName/">
+         <dmlExpression><![CDATA["BU"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="866897327" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509Certificate/">
+         <dmlExpression><![CDATA["MIIDLzCCApigAwIBAgIBATANBgkqhkiG9w0BAQUFADA7MQ8wDQYDVQQDEwZDZXJ0MTExCzAJBgNVBAsTAkJVMQ4wDAYDVQQKEwVBeHdheTELMAkGA1UEBhMCUk8wHhcNMTIxMjExMTgzMDAwWhcNMjQwNzE5MTgzMDAwWjA7MQ8wDQYDVQQDEwZDZXJ0MTExCzAJBgNVBAsTAkJVMQ4wDAYDVQQKEwVBeHdheTELMAkGA1UEBhMCUk8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKd3MDwCAr1zMLdRtFH9iyRB3pJAcmvunp0+JK3JKl1x2F9x2uk6RHIRT5u3tfveUEqc5PdcDH/z8+BRnDcqAE6fhQMWkOlgQmX1tn/k3rlLWoQcS/ORDjT9eHF6yVWuTL088cEvr2qzl5DEfO6x4zZygZorzTPSZvOLnMFbdiVJAgMBAAGjggFBMIIBPTAPBgNVHQ8BAf8EBQMDB/+AMBIGA1UdEwEB/wQIMAYBAf8CAQEwZgYDVR0lAQH/BFwwWgYIKwYBBQUHAwgGCCsGAQUFBwMDBggrBgEFBQcDBAYIKwYBBQUHAwUGCCsGAQUFBwMGBggrBgEFBQcDBwYIKwYBBQUHAwkGCCsGAQUFBwMCBggrBgEFBQcDATCBrQYDVR0OBIGlBIGiMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCndzA8AgK9czC3UbRR/YskQd6SQHJr7p6dPiStySpdcdhfcdrpOkRyEU+bt7X73lBKnOT3XAx/8/PgUZw3KgBOn4UDFpDpYEJl9bZ/5N65S1qEHEvzkQ40/XhxeslVrky9PPHBL69qs5eQxHzuseM2coGaK80z0mbzi5zBW3YlSQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAGjZ5ITt+jJkNvxuC3HyNL/kv+aGmjHCn635RbCJaqnx8t4s6nvlkGzVpjHKhH/34YGZWdSLBIkhisu35nqvslQMbJEYXnMG3SOytkNkBbSdpK5c+kr5py8Y2qXiNcnx2/M6srpyL8HfBuBT1e+S6E8FySXye60b904IdY9+FtN3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1039210249" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/OrganizationName/">
+         <dmlExpression><![CDATA[this\OrganizationName\name]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1450390743" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/cloneable/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-766722241" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/InterchangeId/">
+         <dmlExpression><![CDATA["AXWAY_WINDOWS"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-486666326" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509IssuerName/">
+         <dmlExpression><![CDATA["C=RO, O=Axway, OU=BU, CN=Cert11"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="380046490" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509Certificate/">
+         <dmlExpression><![CDATA["MIIDXzCCAkegAwIBAgIQNa9flV5I4J199Fe2rgC3+jANBgkqhkiG9w0BAQsFADBCMR8wHQYDVQQKHhYAQQB4AHcAYQB5AF8ATABpAG4AdQB4MR8wHQYDVQQDHhYAQQB4AHcAYQB5AF8ATABpAG4AdQB4MB4XDTE4MDUxNDE0MTU0NloXDTIwMDUxNDE0MTU0NlowQjEfMB0GA1UECh4WAEEAeAB3AGEAeQBfAEwAaQBuAHUAeDEfMB0GA1UEAx4WAEEAeAB3AGEAeQBfAEwAaQBuAHUAeDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKknKVN0wBeQoAVbppixnua1s9vAPsctQzjvw34+0UBXTYBAHR4nAQxOC8mb3F86SI1p0jpa0KHwATeYFxB0lKhAmT6kHs3XDHvcg1pEqq032eYM2DECLj0kXpomRSnKeMWoCR0VIUmCD3E1QQUofRvy0DrFkuFGHk7cjL3f3ZbLvWZnMozA/0FdZ5R1d6UV44D+kQZNAnpr195EfM/FVUBbCenAdVgfuKcLkA6JcDgcbg25Lv6N8XokkILpSv9OfkEW80a737dGBEwUQXUr/H/r3cArG8ptVxD1fWyaStkui+eNRbjnnRiD7ao4iposuJr5PM2pQeLcOGJMIzpf2IECAwEAAaNRME8wCwYDVR0PBAQDAgDgMB0GA1UdDgQWBBSOEQI431EfA9G5QAwfCb0uux/0XTAhBgNVHSMEGjAYoBYEFI4RAjjfUR8D0blADB8JvS67H/RdMA0GCSqGSIb3DQEBCwUAA4IBAQAHQ3pBFkkhzlubynY0iz95xWXJvNde5UO/mjiV1GzNMgV0n8lBYY5pHKPOb7sG+ed/lXV+JP3yLFB5+zwdRGLzz0H9FfBubEsk2q+Klo58xnVVsO24w7o+9axwnUdC1V5HlUf8r/Ph9lP/6GJsBY9sRyzsczT4gwtHrXGBUsA7BJO7bm2XCdkW9rMAicEVsE7OAtuBDnYYEteLHLeBtjEo+Ukm+rC/8YMSZKB86pUHx5O1ws5+yZz420YjzOfnzmtO4S09ScilME5ZkXCyN0ijT2pKVHSyfMS9i+YxZmJSoBR782j4JNDybb85xxS/6tXqch6DQ0ZhYSEddzvG/9yp"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2077644931" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/friendlyName/">
+         <dmlExpression><![CDATA["PartnerB_AS2_Delivery"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1149237184" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseOverrideDirection/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1929997779" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/readTimeoutSecs/">
+         <dmlExpression><![CDATA["30"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1804117406" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1486113780" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/transportId/">
+         <dmlExpression><![CDATA["HTTPTransport_1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1710695645" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/usage/">
+         <dmlExpression><![CDATA["encrypting,signing"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1964949401" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-107963577" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509IssuerName/">
+         <dmlExpression><![CDATA["CN=Axway_Linux, O=Axway_Linux"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="785664108" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Email/">
+         <dmlExpression><![CDATA["ravi@gmail.com"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="923486155" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/AS2Protocol/businessProtocolId/">
+         <dmlExpression><![CDATA["AS2_1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="527059571" elementPath="/InterchangePartnerProfile/lastModifed/">
+         <dmlExpression><![CDATA["1534427692548"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1088682691" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxConnections/">
+         <dmlExpression><![CDATA["100"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-338564548" elementPath="/InterchangePartnerProfile/checkSecret/">
+         <dmlExpression><![CDATA["ZwsTC52M6lfgE/OI/FU/go1sd65QitvldNESCr2HRlni6APJgFHlGKMpyb4patgoKPNln1MBAwMCAMbtqQIDAQMCAgMCAQEAAwIAAgEKAQABAgILCAgLCgkIAgkACwMJ"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="645430440" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/gsOnlyMode/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="346238757" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/attemptRestarts/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-194883819" elementPath="/InterchangePartnerProfile/OrganizationProfile/schemaLocation/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/cop http://www.axway.com/Schemas/2009/10/CycloneOrganizationProfile.xsd"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="907022232" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseCommunityCollabSettings/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-661079005" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/City/">
+         <dmlExpression><![CDATA["NA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1870431990" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/certId/">
+         <dmlExpression><![CDATA["C1533710729979.48071@item-s32255_cn"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="889264108" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isSequenced/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1708959572" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/PersonName/">
+         <dmlExpression><![CDATA[this\OrganizationName\name]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1279629070" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/friendlyName/">
+         <dmlExpression><![CDATA["Axway_Linux"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="859893255" elementPath="/InterchangePartnerProfile/OrganizationProfile/RoutingIds/RoutingId/">
+         <dmlExpression><![CDATA[%s_ProtocolVal := "";
+
+loop on this\ProtocolAttribute[where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+	%s_ProtocolVal := this\value
+};
+%s_ProtocolVal]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1466533229" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/AttributeTemplate/Fields/">
+         <dmlExpression><![CDATA["test"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-863768996" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/customTypeGateway/">
+         <dmlExpression><![CDATA["0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="649657555" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/sendChunked/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1819777105" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509SerialNumber/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1163756815" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Phone/">
+         <dmlExpression><![CDATA["7799024334"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1715762183" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/messagingStandard/">
+         <dmlExpression><![CDATA["X12"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1666950795" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/X12ApplicationId/">
+         <dmlExpression><![CDATA["PARTNERB"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="869204308" elementPath="/InterchangePartnerProfile/ds/">
+         <dmlExpression><![CDATA["http://www.w3.org/2000/09/xmldsig#"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-231085706" elementPath="/InterchangePartnerProfile/OrganizationProfile/">
+         <dmlExpression><![CDATA[for each in:\TPM\DocumentExchangeAddress]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1950887008" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/responseTimeoutSecs/">
+         <dmlExpression><![CDATA["300"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1742058285" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/IsIntegration/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1692953098" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/endEntity/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="791436703" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/retries/">
+         <dmlExpression><![CDATA["3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="157129667" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/URL/">
+         <dmlExpression><![CDATA["http://edi1.sword.dbschenker.com:6382/ecUtopiaAS2"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1067602749" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/InterchangeIdQualifier/">
+         <dmlExpression><![CDATA["ZZ"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="894569835" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxMessagesPerConnection/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="536225876" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/connectTimeoutSecs/">
+         <dmlExpression><![CDATA["30"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2145364732" elementPath="/InterchangePartnerProfile/OrganizationProfile/peer/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1787012748" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/endEntity/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="719428608" elementPath="/InterchangePartnerProfile/peerNetwork/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1273467747" elementPath="/InterchangePartnerProfile/xsi/">
+         <dmlExpression><![CDATA["http://www.w3.org/2001/XMLSchema-instance"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1807001896" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/enable102/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2083045909" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/AttributeTemplate/Name/">
+         <dmlExpression><![CDATA["DefaultPartyAttributeTemplate"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1322062025" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/name/">
+         <dmlExpression><![CDATA["PARTNERB_X12"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="230839054" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/Country/">
+         <dmlExpression><![CDATA["NA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1403958911" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/Street/">
+         <dmlExpression><![CDATA["NA"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1848558581" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509SerialNumber/">
+         <dmlExpression><![CDATA["71359674389932391930496835204201625594"]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
