@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="594a8ecf-c655-46bf-ab49-7e0b4b9efd12">
+   <signature appVersion="3.1.2" lastUpdatedOn="21/08/2018 11:42:37 +0530"/>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="true"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="true"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="true"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="true"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="false"/>
+      <configurationParameter name="copyAllAttributes" value="true"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="376422ef-75f4-4485-915f-624766a9ae79">
+         <source ref="1d1962b8-9af2-49a5-941e-214c00099b91"/>
+         <target ref="85499f62-f0fd-4510-a80a-c07a9fa5fbba"/>
+      </graphLink>
+      <graphLink name="link2" hash="897af0ef-dfb8-49f7-9113-3c3f894515f4">
+         <source ref="85499f62-f0fd-4510-a80a-c07a9fa5fbba"/>
+         <target ref="95ffa0a9-a36e-49c8-83de-b3e5f14f835c"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_INPUT" connectedObjectAlias="in2" hash="450d7ec0-f7dd-498d-a1f5-01b05dbca422">
+         <source ref="19e819d6-159c-42fc-9000-c40585e4d0a5"/>
+         <target ref="df895254-8d0b-4f30-93fa-ca8aff9fbe7c"/>
+      </graphLink>
+      <graphLink name="link1" hash="4556ecd2-ee7f-4694-9f0f-fd088108dd3b">
+         <source ref="0fa7ca0a-9f37-4836-9f83-3ed66cd92a5a"/>
+         <target ref="19e819d6-159c-42fc-9000-c40585e4d0a5"/>
+      </graphLink>
+      <graphLink name="Link1" hash="ae59d45a-0bb5-4477-bed7-d3b90581c5ba">
+         <source ref="103de802-d5fa-437b-b95f-275c7aae1e98"/>
+         <target ref="088d08f3-2ee6-48de-8bff-d765b6f4d3bc"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_PassportToB2BiMultiple1" nameDisplayed="true" hash="df895254-8d0b-4f30-93fa-ca8aff9fbe7c">
+         <bounds x="210" height="214" width="321" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionLoop" name="Loop1" nameDisplayed="true" hash="088d08f3-2ee6-48de-8bff-d765b6f4d3bc">
+               <dmlExpression><![CDATA[count( in2:\TPM\DocumentExchangeAddress)]]></dmlExpression>
+               <bounds x="19" height="101" width="189" y="73"/>
+               <intructions>
+                  <instruction factoryType="GraphicalInstructionMap" name="PassportToB2BiMultiple" nameDisplayed="true" mapName="~/Maps/PassportToB2BiMultiple.mdm" hash="1d1962b8-9af2-49a5-941e-214c00099b91">
+                     <bounds x="71" height="40" width="90" y="21"/>
+                  </instruction>
+               </intructions>
+            </instruction>
+            <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="103de802-d5fa-437b-b95f-275c7aae1e98">
+               <dmlExpression><![CDATA[%i_Profiles := 0]]></dmlExpression>
+               <bounds x="182" height="40" width="80" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="InputEntity" name="input1" hash="0fa7ca0a-9f37-4836-9f83-3ed66cd92a5a">
+         <bounds height="40" width="90" y="30"/>
+      </graphNode>
+      <graphNode factoryType="OutputEntity" name="out1" hash="95ffa0a9-a36e-49c8-83de-b3e5f14f835c">
+         <bounds x="711" height="40" width="90" y="120"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="InterchangePartnerProfileMultiple" hash="85499f62-f0fd-4510-a80a-c07a9fa5fbba">
+         <bounds x="553" height="40" width="90" y="107"/>
+         <documentName>~/Business Documents/InterchangePartnerProfileMultiple.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="PassPortConfCertMultiple" hash="19e819d6-159c-42fc-9000-c40585e4d0a5">
+         <bounds x="105" height="40" width="90" y="30"/>
+         <documentName>~/Business Documents/PassPortConfCertMultiple.bdoc</documentName>
+      </graphNode>
+   </graphNodes>
+</flow>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="9cd7900c-54cb-4006-84f4-3da1056571f7">
-   <signature appVersion="3.1.2" lastUpdatedOn="20/08/2018 19:17:17 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="21/08/2018 18:10:18 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/InterchangePartnerProfileMultiple.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/PassPortConfCertMultiple.bdoc" alias="in2"/>
@@ -13,7 +13,7 @@
          <dmlExpression><![CDATA["ftp"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-231085706" elementPath="/InterchangePartnerProfile/OrganizationProfile/">
-         <dmlExpression><![CDATA[for each in2:\TPM\DocumentExchangeAddress]]></dmlExpression>
+         <dmlExpression><![CDATA[ 1 times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="2114220421" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/RestrictedAvailableSSLCipherSuites/NameSSLCipherSuites/">
          <dmlExpression><![CDATA["3des-cbc"]]></dmlExpression>
@@ -25,7 +25,11 @@
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1558007213" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/">
-         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+         <dmlExpression><![CDATA[%i_REFLoop := 0;
+
+if defined in2:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway AS2 server" ] then
+%i_REFLoop :=%i_REFLoop +1;
+%i_REFLoop times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="487297927" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/community/">
          <dmlExpression><![CDATA["APL Enterprise Data Exchange"]]></dmlExpression>
@@ -94,7 +98,11 @@
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-868941685" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/">
-         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+         <dmlExpression><![CDATA[%i_REFLoop := 0;
+
+if defined in2:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway AS2 server" ] then
+%i_REFLoop :=%i_REFLoop +1;
+%i_REFLoop times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1742058285" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/IsIntegration/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -133,8 +141,7 @@
          <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1450390743" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/cloneable/">
-         <dmlExpression><![CDATA[%test := this\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "SignCertificateId"]\value[ 1 ];
-"true"]]></dmlExpression>
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="246353384" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS1CollabRules/asyncReceiptsFirstAS1transportDURL/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -187,7 +194,7 @@
       <mapElement elementHash="859893255" elementPath="/InterchangePartnerProfile/OrganizationProfile/RoutingIds/RoutingId/">
          <dmlExpression><![CDATA[%s_ProtocolVal := "";
 
-loop on this\ProtocolAttribute[where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+loop on in2:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[where item\ProtocolAttributeTypeName\name = "PartnerId" ]
 {
 	%s_ProtocolVal := this\value
 };
@@ -203,7 +210,18 @@ loop on this\ProtocolAttribute[where item\ProtocolAttributeTypeName\name = "Part
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="866897327" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509Certificate/">
-         <dmlExpression><![CDATA[in2:\TPM\entity[ where item\alias = %test]\certificateList\certificate\der[ 1 ]]]></dmlExpression>
+         <dmlExpression><![CDATA[%test := "";
+%i_Certificate := "";
+loop on in2:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "SignCertificateId" ]
+{
+%test := this\value
+};
+
+loop on in2:\TPM\entity\certificateList\certificate[ where item\alias = %test ]
+{
+	%i_Certificate := this\der
+};
+%i_Certificate]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="341028912" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS1CollabRules/EncryptSignAlgorithms/EncryptionAlgorithm/">
          <dmlExpression><![CDATA["DES-EDE3-CBC"]]></dmlExpression>
@@ -255,14 +273,11 @@ loop on this\ProtocolAttribute[where item\ProtocolAttributeTypeName\name = "Part
       </mapElement>
       <mapElement elementHash="157129667" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/URL/">
          <dmlExpression><![CDATA[%s_netAdressValue := "";
-if this\ProtocolTypeId\id = "Gateway AS2 server" then
+loop on in2:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "NetAddress" ]
 {
-	loop on in2:\TPM\DocumentExchangeAddress\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "NetAddress" ]
-	{
-	%s_netAdressValue := this\value
-	};
-	%s_netAdressValue :=replaceString(%s_netAdressValue, "TCP:","http://")
+%s_netAdressValue := this\value
 };
+%s_netAdressValue :=replaceString(%s_netAdressValue, "TCP:","http://");
 %s_netAdressValue
 
 ]]></dmlExpression>
@@ -283,7 +298,11 @@ if this\ProtocolTypeId\id = "Gateway AS2 server" then
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1653639181" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/">
-         <dmlExpression><![CDATA[1 times]]></dmlExpression>
+         <dmlExpression><![CDATA[%i_REFLoop := 0;
+
+if defined in2:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway AS2 server" ] then
+%i_REFLoop :=%i_REFLoop +1;
+%i_REFLoop times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="785664108" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Email/">
          <dmlExpression><![CDATA["ravi@gmail.com"]]></dmlExpression>
@@ -325,7 +344,9 @@ if this\ProtocolTypeId\id = "Gateway AS2 server" then
          <dmlExpression><![CDATA["TP_FTP_3M_Chillie"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1039210249" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/OrganizationName/">
-         <dmlExpression><![CDATA[this\OrganizationName\name]]></dmlExpression>
+         <dmlExpression><![CDATA[%i_Profiles :=%i_Profiles +1;
+setDocumentAttribute ( "B2BXGISend_ProductionFilename", in2:\TPM\DocumentExchangeAddress\OrganizationName[%i_Profiles]\name + ".xml") ;
+in2:\TPM\DocumentExchangeAddress\OrganizationName[%i_Profiles]\name]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1819777105" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509SerialNumber/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
@@ -359,9 +380,6 @@ if this\ProtocolTypeId\id = "Gateway AS2 server" then
       </mapElement>
       <mapElement elementHash="-1680411090" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/asyncReceiptsFirstAS2transportDURL/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-235953506" elementPath="/InterchangePartnerProfile/SecondaryIds/SecondaryId/">
-         <dmlExpression><![CDATA["ZZ:AXWAY_WINDOWS:PARTNERB"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="684015011" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/name/">
          <dmlExpression><![CDATA["Ikea(SFTP)"]]></dmlExpression>

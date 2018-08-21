@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/xmlBusinessDocument" id="a7a33bec-8ff3-4a7e-914b-5cf9023ab61d" keepDecimalSeparatorCharacter="true" keepDecimalSeparator="true" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="utf8" keepInputNumberDateDigits="true" keepPlusSign="true">
-   <signature appVersion="3.1.2" lastUpdatedOn="16/08/2018 21:21:12 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="21/08/2018 12:48:44 +0530"/>
    <childElements>
       <childElement factoryType="XmlProlog" order="1" name="Prolog" label="Prolog xml" hash="-964629216">
          <cardinality minimum="1" maximum="1"/>
@@ -29,7 +29,7 @@
          <cardinality minimum="1" maximum="1"/>
          <childElements>
             <childElement factoryType="XmlSequence" order="9" name="SEQUENCE" hash="310024557">
-               <cardinality maximum="1"/>
+               <cardinality minimum="1" maximum="1"/>
                <childElements>
                   <childElement factoryType="XmlLeaf" hash="892649015" typeId="10" definition="0,8" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="10" encodingElement="utf8" name="Version">
                      <cardinality maximum="1"/>
@@ -985,23 +985,6 @@
                                           </childElement>
                                           <childElement factoryType="XmlLeaf" hash="1611349763" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="234" encodingElement="utf8" name="type">
                                              <cardinality maximum="1"/>
-                                             <enumerationsList>
-                                                <enumeration value="integer"/>
-                                                <enumeration order="1" value="regex"/>
-                                                <enumeration order="2" value="boolean"/>
-                                                <enumeration order="3" value="user"/>
-                                                <enumeration order="4" value="combo"/>
-                                                <enumeration order="5" value="number"/>
-                                                <enumeration order="6" value="char"/>
-                                                <enumeration order="7" value="password"/>
-                                                <enumeration order="8" value="data"/>
-                                                <enumeration order="9" value="netaddress"/>
-                                                <enumeration order="10" value="certificate"/>
-                                                <enumeration order="11" value="certificateID"/>
-                                                <enumeration order="12" value="mode"/>
-                                                <enumeration order="13" value="-1"/>
-                                                <enumeration order="14" value="null"/>
-                                             </enumerationsList>
                                           </childElement>
                                           <childElement factoryType="XmlLeaf" hash="-1673605771" typeId="10" definition="0,1024" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="235" encodingElement="utf8" name="format">
                                              <cardinality maximum="1"/>
@@ -1950,37 +1933,6 @@
                               </childElement>
                               <childElement factoryType="XmlLeaf" hash="-1129789486" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="438" encodingElement="utf8" name="target">
                                  <cardinality maximum="1"/>
-                                 <enumerationsList>
-                                    <enumeration value="Preference"/>
-                                    <enumeration order="1" value="DCPreference"/>
-                                    <enumeration order="2" value="UEPreference"/>
-                                    <enumeration order="3" value="CAUserAttribute"/>
-                                    <enumeration order="4" value="UEUserAttribute"/>
-                                    <enumeration order="5" value="DCUserAttribute"/>
-                                    <enumeration order="6" value="CPUserAttribute"/>
-                                    <enumeration order="7" value="DEAUserAttribute"/>
-                                    <enumeration order="8" value="OrganizationUserAttribute"/>
-                                    <enumeration order="9" value="ProtocolAttribute:Gateway AS1"/>
-                                    <enumeration order="10" value="ProtocolAttribute:Gateway Gateway AS2"/>
-                                    <enumeration order="11" value="ProtocolAttribute:Gateway Gateway AS3"/>
-                                    <enumeration order="12" value="ProtocolAttribute:Gateway EMAIL"/>
-                                    <enumeration order="13" value="ProtocolAttribute:Gateway FTP"/>
-                                    <enumeration order="14" value="ProtocolAttribute:Gateway HTTP"/>
-                                    <enumeration order="15" value="ProtocolAttribute:Gateway OFTP"/>
-                                    <enumeration order="16" value="ProtocolAttribute:Gateway PEL"/>
-                                    <enumeration order="17" value="ProtocolAttribute:Gateway PeSIT D"/>
-                                    <enumeration order="18" value="ProtocolAttribute:Gateway PeSIT E"/>
-                                    <enumeration order="19" value="ProtocolAttribute:Gateway ROSETTANET-EMAIL client"/>
-                                    <enumeration order="20" value="ProtocolAttribute:Gateway ROSETTANET-EMAIL server"/>
-                                    <enumeration order="21" value="ProtocolAttribute:Gateway ROSETTANET-HTTP client"/>
-                                    <enumeration order="22" value="ProtocolAttribute:Gateway ROSETTANET-HTTP server"/>
-                                    <enumeration order="23" value="ProtocolAttribute:Gateway Ssh-FTP"/>
-                                    <enumeration order="24" value="ProtocolAttribute:XIB FTP client"/>
-                                    <enumeration order="25" value="ProtocolAttribute:XIB FTP server"/>
-                                    <enumeration order="26" value="ProtocolAttribute:XIB HTTP client"/>
-                                    <enumeration order="27" value="ProtocolAttribute:XIB HTTP server"/>
-                                    <enumeration order="28" value="ProtocolAttribute:XIB eBMS"/>
-                                 </enumerationsList>
                               </childElement>
                               <childElement factoryType="XmlLeaf" hash="-879585698" typeId="10" definition="0,64" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="439" encodingElement="utf8" name="label">
                                  <cardinality maximum="1"/>
@@ -2019,23 +1971,6 @@
                                           </childElement>
                                           <childElement factoryType="XmlLeaf" hash="954277936" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="450" encodingElement="utf8" name="type">
                                              <cardinality maximum="1"/>
-                                             <enumerationsList>
-                                                <enumeration value="integer"/>
-                                                <enumeration order="1" value="regex"/>
-                                                <enumeration order="2" value="boolean"/>
-                                                <enumeration order="3" value="user"/>
-                                                <enumeration order="4" value="combo"/>
-                                                <enumeration order="5" value="number"/>
-                                                <enumeration order="6" value="char"/>
-                                                <enumeration order="7" value="password"/>
-                                                <enumeration order="8" value="data"/>
-                                                <enumeration order="9" value="netaddress"/>
-                                                <enumeration order="10" value="certificate"/>
-                                                <enumeration order="11" value="certificateID"/>
-                                                <enumeration order="12" value="mode"/>
-                                                <enumeration order="13" value="-1"/>
-                                                <enumeration order="14" value="null"/>
-                                             </enumerationsList>
                                           </childElement>
                                           <childElement factoryType="XmlLeaf" hash="-1461536196" typeId="10" definition="0,1024" paddingCharElement=" " xmlNamespace="700" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="451" encodingElement="utf8" name="format">
                                              <cardinality maximum="1"/>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<InterchangePartnerProfile xsi:schemaLocation="http://www.axway.com/Schemas/2009/10/ipp http://www.axway.com/Schemas/2009/10/InterchangePartnerConfig.xsd" peerNetwork="false" lastModifed="1534427692548" checkSecret="ZwsTC52M6lfgE/OI/FU/go1sd65QitvldNESCr2HRlni6APJgFHlGKMpyb4patgoKPNln1MBAwMCAMbtqQIDAQMCAgMCAQEAAwIAAgEKAQABAgILCAgLCgkIAgkACwMJ" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attribute="http://www.axway.com/Schemas/2012/attribute" xmlns:cop="http://www.axway.com/Schemas/2009/10/cop" xmlns="http://www.axway.com/Schemas/2009/10/ipp"><cop:OrganizationProfile peer="false" xsi:schemaLocation="http://www.axway.com/Schemas/2009/10/cop http://www.axway.com/Schemas/2009/10/CycloneOrganizationProfile.xsd"><cop:AdministrativeInfo><cop:cloneable>true</cop:cloneable><cop:OrganizationName>GENERAL_RP</cop:OrganizationName><cop:PostalAddress><cop:Street>NA</cop:Street><cop:City>NA</cop:City><cop:Country>NA</cop:Country></cop:PostalAddress><cop:Contacts><cop:Contact><cop:PersonName>abhishek</cop:PersonName><cop:Email>ravi@gmail.com</cop:Email><cop:Phone>7799024334</cop:Phone></cop:Contact></cop:Contacts><attribute:AttributeTemplate><attribute:Name>DefaultPartyAttributeTemplate</attribute:Name></attribute:AttributeTemplate></cop:AdministrativeInfo><cop:RoutingIds><cop:RoutingId>41073294500010</cop:RoutingId></cop:RoutingIds><cop:Transports preferredTransportRef="HTTPTransport_1"><cop:HTTPTransport SequenceTimeout="60.0" attemptRestarts="false" connectTimeoutSecs="30" customTypeGateway="0" enable102="false" friendlyName="" isConsumer="false" isIntegration="false" isSequenced="false" maxConnections="100" maxMessagesPerConnection="1" readTimeoutSecs="30" responseTimeoutSecs="300" retries="3" sendChunked="false" transportId="HTTPTransport_1" useCustomRetryIntervals="false"><cop:URL>http://easerver.sedeb2b.com:9013</cop:URL><cop:UseCommunityCollabSettings>false</cop:UseCommunityCollabSettings><cop:UseOverrideDirection>false</cop:UseOverrideDirection><cop:MessageAttributesTemplate DefaultMessageAttributesTemplate="" IsMessageAttributesTemplateEnabledByProtocol="" IsMessageAttributesTemplatePrior=""/><cop:IsIntegration>false</cop:IsIntegration></cop:HTTPTransport></cop:Transports><cop:Certificates preferredEncryptionCertId=""><cop:Certificate certId="" endEntity="true" friendlyName="" root="true" usage="encrypting,signing"><ds:KeyInfo><ds:X509Data><ds:X509IssuerSerial><ds:X509IssuerName/><ds:X509SerialNumber/></ds:X509IssuerSerial><ds:X509Certificate>MIIDLzCCApigAwIBAgIBATANBgkqhkiG9w0BAQUFADA7MQ8wDQYDVQQDEwZDZXJ0
+
+MTExCzAJBgNVBAsTAkJVMQ4wDAYDVQQKEwVBeHdheTELMAkGA1UEBhMCUk8wHhcN
+
+MTIxMjExMTgzMDAwWhcNMjQwNzE5MTgzMDAwWjA7MQ8wDQYDVQQDEwZDZXJ0MTEx
+
+CzAJBgNVBAsTAkJVMQ4wDAYDVQQKEwVBeHdheTELMAkGA1UEBhMCUk8wgZ8wDQYJ
+
+KoZIhvcNAQEBBQADgY0AMIGJAoGBAKd3MDwCAr1zMLdRtFH9iyRB3pJAcmvunp0+
+
+JK3JKl1x2F9x2uk6RHIRT5u3tfveUEqc5PdcDH/z8+BRnDcqAE6fhQMWkOlgQmX1
+
+tn/k3rlLWoQcS/ORDjT9eHF6yVWuTL088cEvr2qzl5DEfO6x4zZygZorzTPSZvOL
+
+nMFbdiVJAgMBAAGjggFBMIIBPTAPBgNVHQ8BAf8EBQMDB/+AMBIGA1UdEwEB/wQI
+
+MAYBAf8CAQEwZgYDVR0lAQH/BFwwWgYIKwYBBQUHAwgGCCsGAQUFBwMDBggrBgEF
+
+BQcDBAYIKwYBBQUHAwUGCCsGAQUFBwMGBggrBgEFBQcDBwYIKwYBBQUHAwkGCCsG
+
+AQUFBwMCBggrBgEFBQcDATCBrQYDVR0OBIGlBIGiMIGfMA0GCSqGSIb3DQEBAQUA
+
+A4GNADCBiQKBgQCndzA8AgK9czC3UbRR/YskQd6SQHJr7p6dPiStySpdcdhfcdrp
+
+OkRyEU+bt7X73lBKnOT3XAx/8/PgUZw3KgBOn4UDFpDpYEJl9bZ/5N65S1qEHEvz
+
+kQ40/XhxeslVrky9PPHBL69qs5eQxHzuseM2coGaK80z0mbzi5zBW3YlSQIDAQAB
+
+MA0GCSqGSIb3DQEBBQUAA4GBAGjZ5ITt+jJkNvxuC3HyNL/kv+aGmjHCn635RbCJ
+
+aqnx8t4s6nvlkGzVpjHKhH/34YGZWdSLBIkhisu35nqvslQMbJEYXnMG3SOytkNk
+
+BbSdpK5c+kr5py8Y2qXiNcnx2/M6srpyL8HfBuBT1e+S6E8FySXye60b904IdY9+
+
+FtN3</ds:X509Certificate></ds:X509Data></ds:KeyInfo></cop:Certificate></cop:Certificates><cop:BusinessProtocols><cop:AS2Protocol businessProtocolId="AS2_1"><cop:TransportRef transportId="HTTPTransport_1"/></cop:AS2Protocol></cop:BusinessProtocols><cop:CommunitySubscription><cop:AuthorizedParty>Axway_Windows</cop:AuthorizedParty></cop:CommunitySubscription></cop:OrganizationProfile></InterchangePartnerProfile>
